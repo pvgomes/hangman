@@ -3,12 +3,12 @@
 (defn lose [] (println "You lose :("))
 (defn win [] (println "You win :)"))
 
-(defn missing-letters [words hits]
-  (remove (fn [letter] (contains? hits (str letter))) words)
+(defn missing-letters [word hits]
+  (remove (fn [letter] (contains? hits (str letter))) word)
   )
 
-(defn got-it-every-word? [words hits]
-    (empty? (missing-letters words hits))
+(defn got-it-every-word? [word hits]
+    (empty? (missing-letters word hits))
   )
 
 (defn read-letter! [] (read-line))
