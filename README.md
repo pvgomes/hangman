@@ -6,8 +6,9 @@ hangman clojure game
 ### usage
 `lein run`
 
-### tests
-`lein test`
+### Before commit
+- run tests: `lein test`
+- run lint-fix: `lein lint-fix`
 
 ### compile
 `lein uberjar`

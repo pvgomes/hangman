@@ -4,12 +4,10 @@
 (defn win [] (println "You win :)"))
 
 (defn missing-letters [word hits]
-  (remove (fn [letter] (contains? hits (str letter))) word)
-  )
+  (remove (fn [letter] (contains? hits (str letter))) word))
 
 (defn got-it-every-word? [word hits]
-    (empty? (missing-letters word hits))
-  )
+  (empty? (missing-letters word hits)))
 
 (defn read-letter! [] (read-line))
 
@@ -18,9 +16,9 @@
 (defn print-hangman [lifes word hits]
   (println "Remain lifes: " lifes)
   (doseq [letter (seq word)]
-        (if (contains? hits (str letter))
-          (print letter " ")
-          (print "_" " ")))
+    (if (contains? hits (str letter))
+      (print letter " ")
+      (print "_" " ")))
   (println))
 
 (defn game [lifes word hits]
@@ -33,11 +31,7 @@
       (if (got-it? attempt word)
         (do
           (println "Right letter, great!")
-          (recur lifes word (conj hits attempt))
-          )
+          (recur lifes word (conj hits attempt)))
         (do
           (println "Wrong leeter, lost one heart!")
-          (recur (dec lifes) word hits)
-          )
-        )
-      )))
+          (recur (dec lifes) word hits))))))
