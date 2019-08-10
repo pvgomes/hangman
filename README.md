@@ -2,7 +2,7 @@
 hangman clojure game
 
 [![Build Status](https://travis-ci.org/pvgomes/hangman.svg?branch=master)](https://travis-ci.org/pvgomes/hangman)
-
+[![CircleCI](https://circleci.com/gh/pvgomes/hangman.svg?style=svg)](https://circleci.com/gh/pvgomes/hangman)
 ### usage
 `lein run`
 
