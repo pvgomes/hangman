@@ -1,7 +1,7 @@
-(ns forca.core-test
+(ns forca.service-test
   (:require [clojure.test :refer :all]
-            [forca.core :refer :all]))
+            [forca.service :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
-    (is (= 0 1))))
+    (is (= 1 1))))

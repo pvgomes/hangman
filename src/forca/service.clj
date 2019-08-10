@@ -1,7 +1,4 @@
-(ns forca.core)
-
-(def total-of-lifes 6)
-(def secret-word "paralelepipedo")
+(ns forca.service)
 
 (defn lose [] (println "You lose :("))
 (defn win [] (println "You win :)"))
@@ -44,9 +41,3 @@
           )
         )
       )))
-
-(defn start-game []
-  (game total-of-lifes secret-word #{})
-)
-(defn -main [& args]
-  (start-game))

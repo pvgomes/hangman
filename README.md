@@ -5,7 +5,7 @@ hangman clojure game
 `lein run`
 
 ### tests
-`WIP`
+`lein test`
 
 ### compile
 `lein uberjar`
@@ -18,5 +18,5 @@ hangman clojure game
 `(require '[forca.core :as forca] :reload)`
 
 
-
+### Rules
 - Avoid stack overflow using tail recursion `recur` 
